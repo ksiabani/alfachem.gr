@@ -1,0 +1,21 @@
+//Left sidebar menu taken from here: http://stackoverflow.com/questions/19681895/how-to-create-a-sticky-left-sidebar-menu-using-bootstrap-3
+extends layout
+
+block content
+    .container
+        .row
+            #leftCol.col-md-3
+                ul#sidebar.nav.nav-stacked
+                    li
+                        a(href="#sec0") Section 0
+                    li
+                        a(href="#sec1") Section 1
+                    li
+                        a(href="#sec2") Section 2
+                    li
+                        a(href="#sec3") Section 3
+            .col-md-9
+                h2#sec0 Content
+                p At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can
+                | find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
+
