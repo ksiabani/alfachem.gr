@@ -1,5 +1,42 @@
 extends layout
 
 block content
-    h3 This is the contact page
-
+    .container
+        .row
+            .col-md-12.col-xs-12.col-sm-12
+                .page-header
+                    h3 Contact Form
+            .col-md-8.col-xs-12.col-sm-8
+                form.form-horizontal(role='form', method='POST')
+                    input(type='hidden', name='_csrf', value=_csrf)
+                    .form-group
+                        label(class='col-sm-2 control-label', for='name') Name
+                        .col-sm-8
+                            input.form-control(type='text', name='name', id='name', autofocus=true)
+                    .form-group
+                        label(class='col-sm-2 control-label', for='email') Email
+                        .col-sm-8
+                            input.form-control(type='text', name='email', id='email')
+                    .form-group
+                        label(class='col-sm-2 control-label', for='message') Body
+                        .col-sm-8
+                            textarea.form-control(type='text', name='message', id='message', rows='7')
+                    .form-group
+                        .col-sm-offset-2.col-sm-8
+                            button.btn.btn-primary(type='submit')
+                                span.ion-paper-airplane
+                                | Send
+            .col-md-4.col-xs-12.col-sm-4
+                .info
+                    p <strong> Address </strong>
+                    | 17, Arionos st.
+                    br
+                    | Melissia
+                    br
+                    | 151 27
+                    br
+                    | Greece
+                    br
+                    br
+                    p <strong>Tel:</strong>  +302102847356
+                    | <strong>Fax:</strong>  +302102847356

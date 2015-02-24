@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //var i18n = require('./config/i18n');
 var i18n = require('i18n');
+var nodemailer = require('nodemailer');
 
 var routes = require('./routes/index');
 var users = require('./routes/user');
@@ -15,6 +16,15 @@ i18n.configure({
     locales: ['en', 'el'],
     cookie: 'locale',
     directory: __dirname + '/config/locales'
+});
+
+// Create a SMTP transport object
+var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+        user: 'kostas.siabanis@gmail.com',
+        pass: 'V0snidou1Mar1a'
+    }
 });
 
 var app = express();
@@ -74,3 +84,6 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+
+//http://www.livelythinking.com/2014/01/creating-feedback-form-in-nodejs-app.html
