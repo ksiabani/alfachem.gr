@@ -3,40 +3,40 @@ extends layout
 block content
     .container
         .row
-            .col-md-12.col-xs-12.col-sm-12
-                .page-header
-                    h3 Contact Form
-            .col-md-8.col-xs-12.col-sm-8
+            //.col-md-12.col-xs-12.col-sm-12
+            .page-header
+                h3 #{__('Contact Form')}
+            .col-md-9
                 form.form-horizontal(role='form', method='POST')
                     input(type='hidden', name='_csrf', value=_csrf)
                     .form-group
-                        label(class='col-sm-2 control-label', for='name') Name
+                        label(class='col-sm-2 control-label', for='name') #{__('Name')}
                         .col-sm-8
                             input.form-control(type='text', name='name', id='name', autofocus=true)
                     .form-group
-                        label(class='col-sm-2 control-label', for='email') Email
+                        label(class='col-sm-2 control-label', for='email') #{__('Email')}
                         .col-sm-8
                             input.form-control(type='text', name='email', id='email')
                     .form-group
-                        label(class='col-sm-2 control-label', for='message') Body
+                        label(class='col-sm-2 control-label', for='message') #{__('Message')}
                         .col-sm-8
                             textarea.form-control(type='text', name='message', id='message', rows='7')
                     .form-group
                         .col-sm-offset-2.col-sm-8
                             button.btn.btn-primary(type='submit')
                                 span.ion-paper-airplane
-                                | Send
-            .col-md-4.col-xs-12.col-sm-4
+                                | #{__('Submit')}
+            .col-md-3
                 .info
-                    p <strong> Address </strong>
-                    | 17, Arionos st.
+                    p <strong> #{__('Address')} </strong>
+                    | #{__('17, Arionos st.')}
                     br
-                    | Melissia
+                    | #{__('Marousi')}
                     br
                     | 151 27
                     br
-                    | Greece
+                    | #{__('Greece')}
                     br
                     br
-                    p <strong>Tel:</strong>  +302102847356
-                    | <strong>Fax:</strong>  +302102847356
+                    p <strong>#{__('Tel.:')}</strong>  +302102847356
+                    | <strong>#{__('Fax:')}</strong>  +302102847356

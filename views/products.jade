@@ -3,19 +3,59 @@ extends layout
 
 block content
     .container
-        .row
-            #leftCol.col-md-3
+        .page-header
+            h3 Our products
+            //#leftCol.col-md-3
                 ul#sidebar.nav.nav-stacked
                     li
-                        a(href="#sec0") Section 0
+                        a(href="#coatings") Coatings
                     li
-                        a(href="#sec1") Section 1
+                        a(href="#adhesives") Adhesives
                     li
-                        a(href="#sec2") Section 2
+                        a(href="#construction") Construction
                     li
-                        a(href="#sec3") Section 3
-            .col-md-9
-                h2#sec0 Content
-                p At Bootply we like to build simple Bootstrap templates that utilize the code Bootstap CSS without a lot of customization. Sure you can
-                | find a lot of Bootstrap themes and inspiration, but these templates tend to be heavy on customization.
-
+                        a(href="#specialties") Specialties
+        .col-md-9
+            h2#coatings Coatings
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat enim id interdum pretium. Vivamus orci eros, lacinia non erat at, luctus sodales lorem. Mauris vel commodo orci. Nunc ac enim dolor. Duis mattis at mauris a vestibulum. Suspendisse eu maximus nisl. Donec ac tincidunt est, et sollicitudin neque. Donec iaculis urna at ligula euismod fringilla. Sed dignissim justo odio, nec pellentesque nisl bibendum fringilla. Etiam volutpat porta nunc, a elementum sapien pharetra et. Nullam molestie arcu vitae ante tristique iaculis. Nam semper imperdiet est, ut congue sapien mollis eu. Suspendisse non est a lacus laoreet viverra eu eget diam.
+            ul
+                li TiO2
+                li Dispersioners
+                li Exterior Paints
+                li Resines for water based
+                li Functional fillers
+            h2#adhesives Adhesives
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat enim id interdum pretium. Vivamus orci eros, lacinia non erat at, luctus sodales lorem. Mauris vel commodo orci. Nunc ac enim dolor. Duis mattis at mauris a vestibulum. Suspendisse eu maximus nisl. Donec ac tincidunt est, et sollicitudin neque. Donec iaculis urna at ligula euismod fringilla. Sed dignissim justo odio, nec pellentesque nisl bibendum fringilla. Etiam volutpat porta nunc, a elementum sapien pharetra et. Nullam molestie arcu vitae ante tristique iaculis. Nam semper imperdiet est, ut congue sapien mollis eu. Suspendisse non est a lacus laoreet viverra eu eget diam.
+            ul
+                li TiO2
+                li Dispersioners
+                li Exterior Paints
+                li Resines for water based
+                li Functional fillers
+            h2#construction Construction
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat enim id interdum pretium. Vivamus orci eros, lacinia non erat at, luctus sodales lorem. Mauris vel commodo orci. Nunc ac enim dolor. Duis mattis at mauris a vestibulum. Suspendisse eu maximus nisl. Donec ac tincidunt est, et sollicitudin neque. Donec iaculis urna at ligula euismod fringilla. Sed dignissim justo odio, nec pellentesque nisl bibendum fringilla. Etiam volutpat porta nunc, a elementum sapien pharetra et. Nullam molestie arcu vitae ante tristique iaculis. Nam semper imperdiet est, ut congue sapien mollis eu. Suspendisse non est a lacus laoreet viverra eu eget diam.
+            ul
+                li TiO2
+                li Dispersioners
+                li Exterior Paints
+                li Resines for water based
+                li Functional fillers
+            h2#specialties Specialties
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat enim id interdum pretium. Vivamus orci eros, lacinia non erat at, luctus sodales lorem. Mauris vel commodo orci. Nunc ac enim dolor. Duis mattis at mauris a vestibulum. Suspendisse eu maximus nisl. Donec ac tincidunt est, et sollicitudin neque. Donec iaculis urna at ligula euismod fringilla. Sed dignissim justo odio, nec pellentesque nisl bibendum fringilla. Etiam volutpat porta nunc, a elementum sapien pharetra et. Nullam molestie arcu vitae ante tristique iaculis. Nam semper imperdiet est, ut congue sapien mollis eu. Suspendisse non est a lacus laoreet viverra eu eget diam.
+            ul
+                li TiO2
+                li Dispersioners
+                li Exterior Paints
+                li Resines for water based
+                li Functional fillers
+        .col-md-3(role="complementary")
+            nav.bs-docs-sidebar.hidden-print.hidden-xs.hidden-sm
+                ul#sidebar.nav.bs-docs-sidenav(data-spy="affix" data-offset-top="30" data-offset-bottom="200")
+                    li
+                        a(href="#coatings") Coatings
+                    li
+                        a(href="#adhesives") Adhesives
+                    li
+                        a(href="#construction") Construction
+                    li
+                        a(href="#specialties") Specialties
